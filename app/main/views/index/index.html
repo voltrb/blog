@@ -1,31 +1,5 @@
 <:Title>
-  {#template main_path, "title", {shared_controller: 'main'}}
+  Home
 
 <:Body>
-  <div class="container">
-    <div class="header">
-      <ul class="nav nav-pills pull-right">
-        <:nav controller="" text="Home" />
-        <:nav controller="blog" text="Blog" />
-        <:nav controller="about" text="About" />
-      </ul>
-      <h3 class="text-muted">Project name</h3>
-    </div>
-
-    <:volt:notices />
-
-    {#template main_path, 'body', {shared_controller: 'main'}}
-
-    <div class="footer">
-      <p>&copy; Company 2014</p>
-    </div>
-
-  </div>
-
-
-
-<:Nav>
-  <li class="{#if params._controller.or('') == @controller}active{/}">
-    <a href="/{@controller}">{@text}</a>
-  </li>
-
+  <h1>Home</h1>
