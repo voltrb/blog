@@ -33,7 +33,7 @@ PATH
 PATH
   remote: /Users/ryanstout/Sites/volt/volt
   specs:
-    volt (0.7.4)
+    volt (0.7.5)
       listen (~> 2.4.0)
       mongo (~> 1.9.0)
       pry (~> 0.9.12.0)

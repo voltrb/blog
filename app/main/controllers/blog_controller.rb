@@ -1,5 +1,10 @@
 class BlogController < ModelController
 
+  def initialize(*args)
+    puts "New Blog Controller"
+    super
+  end
+
   def index
     self.model = :store
   end

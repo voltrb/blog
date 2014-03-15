@@ -1,5 +1,5 @@
 <:Title>
-  {#template params._controller.or('home') + "/" + params._action.or(''), "title"}
+  {#template main_path, "title", {shared_controller: 'main'}}
 
 <:Body>
   <div class="container">
@@ -14,7 +14,7 @@
 
     <:volt:notices />
 
-    {#template params._controller.or('home') + "/" + params._action.or('')}
+    {#template main_path, 'body', {shared_controller: 'main'}}
 
     <div class="footer">
       <p>&copy; Company 2014</p>
