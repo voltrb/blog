@@ -1,0 +1,10 @@
+<:Body>
+  <div class="form-group {#if @errors}has-error{/}">
+    {#if @label}
+      <label class="control-label">{@label}!!!</label>
+    {/}
+    <input type="{@type}" value="{@value}" e-focusout="blurred" class="form-control" />
+    {#if @errors}
+      <span class="control-label errors">{@errors.or([]).join(', ')}</span>
+    {/}
+  </p>
