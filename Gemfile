@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'volt', path: '/Users/ryanstout/Sites/volt/volt'
+gem 'volt'#, path: '/Users/ryanstout/Sites/volt/volt'
 
 
 # The following gem's are optional for themeing
@@ -12,7 +12,7 @@ gem 'volt-bootstrap'
 gem 'volt-bootstrap-jumbotron-theme'
 
 
-gem 'volt-fields', path: '/Users/ryanstout/Sites/volt/apps/volt-fields'
+gem 'volt-fields'#, path: '/Users/ryanstout/Sites/volt/apps/volt-fields'
 
 
 

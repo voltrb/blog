@@ -29,7 +29,7 @@ class BlogController < ModelController
   end
 
   def save
-    model.save!.then do
+    res = model.save!.then do
       go '/blog'
     end.fail do |val|
       puts "Failed with #{val.inspect}"

@@ -1,3 +1,3 @@
-# Start your docs here.
+# Sample Blog App
 
-# See Volt docs at https://github.com/voltrb/volt/blob/master/Readme.md
+A sample blog app written in volt.  Just to demo code, no user auth yet.
