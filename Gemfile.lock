@@ -74,7 +74,7 @@ GEM
     rspec-mocks (3.0.0.beta1)
       rspec-support (= 3.0.0.beta1)
     rspec-support (3.0.0.beta1)
-    sass (3.2.15)
+    sass (3.2.16)
     slop (3.5.0)
     source_map (3.0.1)
       json
@@ -96,7 +96,7 @@ GEM
     uglifier (2.4.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    volt (0.7.12)
+    volt (0.7.13)
       listen (~> 2.4.0)
       mongo (~> 1.9.0)
       pry (~> 0.9.12.0)
