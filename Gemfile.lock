@@ -19,7 +19,7 @@ GIT
 
 GIT
   remote: https://github.com/opal/opal.git
-  revision: d9989fcd4ae808dedfbd89f1536b1100219ccff4
+  revision: b8fd3d4907b5de5481e1a27368d29f8daec6bc22
   specs:
     opal (0.6.0)
       source_map
@@ -49,7 +49,7 @@ GEM
     method_source (0.8.2)
     mongo (1.9.2)
       bson (~> 1.9.2)
-    multi_json (1.9.0)
+    multi_json (1.9.2)
     pry (0.9.12.6)
       coderay (~> 1.0)
       method_source (~> 0.8)
@@ -74,7 +74,7 @@ GEM
     rspec-mocks (3.0.0.beta1)
       rspec-support (= 3.0.0.beta1)
     rspec-support (3.0.0.beta1)
-    sass (3.2.16)
+    sass (3.2.18)
     slop (3.5.0)
     source_map (3.0.1)
       json
@@ -96,7 +96,7 @@ GEM
     uglifier (2.4.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    volt (0.7.13)
+    volt (0.7.14)
       listen (~> 2.4.0)
       mongo (~> 1.9.0)
       pry (~> 0.9.12.0)
@@ -108,9 +108,9 @@ GEM
       thor (~> 0.18.0)
       uglifier (~> 2.4.0)
       yui-compressor (~> 0.12.0)
-    volt-bootstrap (0.0.3)
+    volt-bootstrap (0.0.4)
     volt-bootstrap-jumbotron-theme (0.0.3)
-    volt-fields (0.0.2)
+    volt-fields (0.0.4)
     websocket-driver (0.3.2)
     yui-compressor (0.12.0)
 
