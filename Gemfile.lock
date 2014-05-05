@@ -1,55 +1,40 @@
-GIT
-  remote: https://github.com/kacperk/sockjs-ruby.git
-  revision: 72f715fb3173c44f0ce28a884c62670e6424dbef
-  specs:
-    sockjs (0.3.4.4)
-      faye-websocket (~> 0.7.1)
-      json
-      rack
-      rack-mount (~> 0.8.3)
-      regin (~> 0.3.8)
-      thin
-
-GIT
-  remote: https://github.com/opal/opal-jquery.git
-  revision: 423476392de4ab94e1aed1194e84df54615ef9ab
-  specs:
-    opal-jquery (0.2.0)
-      opal (>= 0.5.0, < 1.0.0)
-
-GIT
-  remote: https://github.com/opal/opal.git
-  revision: b8fd3d4907b5de5481e1a27368d29f8daec6bc22
-  specs:
-    opal (0.6.0)
-      source_map
-      sprockets
-
 GEM
   remote: https://rubygems.org/
   specs:
     bson (1.9.2)
+    bson_ext (1.9.2)
+      bson (~> 1.9.2)
     celluloid (0.15.2)
       timers (~> 1.1.0)
+    celluloid-io (0.15.0)
+      celluloid (>= 0.15.0)
+      nio4r (>= 0.5.0)
     coderay (1.1.0)
     daemons (1.1.9)
     diff-lcs (1.2.5)
     eventmachine (1.0.3)
     execjs (2.0.2)
-    faye-websocket (0.7.2)
+    faye-websocket (0.7.3)
       eventmachine (>= 0.12.0)
       websocket-driver (>= 0.3.1)
     ffi (1.9.3)
     hike (1.2.3)
     json (1.8.1)
-    listen (2.4.1)
+    listen (2.7.4)
       celluloid (>= 0.15.2)
+      celluloid-io (>= 0.15.0)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     method_source (0.8.2)
     mongo (1.9.2)
       bson (~> 1.9.2)
-    multi_json (1.9.2)
+    multi_json (1.9.3)
+    nio4r (1.0.0)
+    opal (0.6.2)
+      source_map
+      sprockets
+    opal-jquery (0.2.0)
+      opal (>= 0.5.0, < 1.0.0)
     pry (0.9.12.6)
       coderay (~> 1.0)
       method_source (~> 0.8)
@@ -59,9 +44,8 @@ GEM
       rack (>= 1.0.0)
     rake (10.0.4)
     rb-fsevent (0.9.4)
-    rb-inotify (0.9.3)
+    rb-inotify (0.9.4)
       ffi (>= 0.5.0)
-    regin (0.3.8)
     rspec (3.0.0.beta1)
       rspec-core (= 3.0.0.beta1)
       rspec-expectations (= 3.0.0.beta1)
@@ -74,11 +58,11 @@ GEM
     rspec-mocks (3.0.0.beta1)
       rspec-support (= 3.0.0.beta1)
     rspec-support (3.0.0.beta1)
-    sass (3.2.18)
+    sass (3.2.19)
     slop (3.5.0)
     source_map (3.0.1)
       json
-    sprockets (2.12.0)
+    sprockets (2.12.1)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
@@ -96,9 +80,11 @@ GEM
     uglifier (2.4.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    volt (0.7.14)
-      listen (~> 2.4.0)
+    volt (0.7.16)
+      listen (~> 2.7.0)
       mongo (~> 1.9.0)
+      opal (~> 0.6.0)
+      opal-jquery (~> 0.2.0)
       pry (~> 0.9.12.0)
       rack (~> 1.5.0)
       rake (~> 10.0.4)
@@ -111,17 +97,24 @@ GEM
     volt-bootstrap (0.0.4)
     volt-bootstrap-jumbotron-theme (0.0.3)
     volt-fields (0.0.4)
-    websocket-driver (0.3.2)
+    volt-sockjs (0.3.4.4)
+      faye-websocket (~> 0.7.1)
+      json
+      rack
+      rack-mount (~> 0.8.3)
+      thin
+    websocket-driver (0.3.3)
     yui-compressor (0.12.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  opal!
-  opal-jquery!
-  sockjs!
-  volt
+  bson_ext (~> 1.9.0)
+  jubilee
+  thin (~> 1.6.0)
+  volt (= 0.7.16)
   volt-bootstrap
   volt-bootstrap-jumbotron-theme
   volt-fields
+  volt-sockjs
